@@ -66,6 +66,45 @@
             padding: 6px;
 
         }
+
+
+        /* Default: Desktop mega menu */
+        .mega-menu .col-12 {
+            min-width: 267px;
+        }
+
+        /* For small screens */
+        @media (max-width: 768px) {
+            .mega-menu {
+                width: 100% !important;
+                left: 0 !important;
+            }
+
+            .mega-menu .row {
+                display: block !important;
+                /* stack items */
+            }
+
+            .mega-menu .col-12,
+            .mega-menu .col-sm-6,
+            .mega-menu .col-md-4,
+            .mega-menu .col-lg-2 {
+                width: 100% !important;
+                max-width: 100% !important;
+                margin-bottom: 15px;
+            }
+
+            .mega-menu h5 {
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+
+            .mega-menu ul li a {
+                font-size: 14px;
+                padding-left: 15px;
+            }
+        }
     </style>
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
 </head>
@@ -123,6 +162,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <div class="col d-flex justify-content-center d-lg-none" id="logos">
+                <div class="center d-flex justify-content-center gap-4 text-dark">
+                    <span><strong>Miracle Drinks</strong></span>
+                </div>
+            </div>
+
+
             <div class="collapse navbar-collapse gap-2 " id="navbarSupportedContent">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
@@ -136,17 +182,18 @@
                         <li class="nav-item"><a class="nav-link"
                                 href="./pages/testimonial.html"><strong>Testimonial</strong></a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Treatments
                             </a>
+
 
                             <div class="dropdown-menu mega-menu p-4 border border-success mt-2" style="left: -30px;">
                                 <div class="col-12 ">
                                     <div class="row">
 
                                         <!-- 1 -->
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>CKD</h5>
                                             <ul class="list-unstyled mb-2">
                                                 <li><a class="dropdown-item" href="./pages/bloodpressure.html">CKD due
@@ -161,7 +208,7 @@
                                                         Stone</a></li>
                                             </ul>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>Diabetes and Pancreas</h5>
                                             <ul class="list-unstyled">
                                                 <li>
@@ -187,7 +234,7 @@
                                             </ul>
                                         </div>
                                         <!-- 2 -->
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>Obesity</h5>
                                             <ul class="list-unstyled">
                                                 <li><a class="dropdown-item" href="./pages/weightloss.html">Obesity &
@@ -201,7 +248,7 @@
 
 
                                         <!-- 16 -->
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>Prostrate</h5>
                                             <ul class="list-unstyled">
                                                 <li><a class="dropdown-item" href="./pages/prostrate.html">Prostrate</a>
@@ -209,7 +256,7 @@
                                             </ul>
                                         </div>
 
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>Blood Pressure</h5>
                                             <ul class="list-unstyled">
                                                 <li><a class="dropdown-item"
@@ -218,14 +265,14 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>Cancer</h5>
                                             <ul class="list-unstyled">
                                                 <li><a class="dropdown-item" href="./pages/cancer.html">Cancer</a>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>Heart</h5>
                                             <ul class="list-unstyled">
                                                 <li>
@@ -246,7 +293,7 @@
                                             </ul>
                                         </div>
 
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>Bones and Joints</h5>
                                             <ul class="list-unstyled">
                                                 <li><a class="dropdown-item" href="./pages/piles.html">Cervical
@@ -274,7 +321,7 @@
 
                                         <!-- 8 -->
 
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>Obesity and Weight Reduction</h5>
                                             <ul class="list-unstyled">
                                                 <li>
@@ -284,7 +331,7 @@
                                             </ul>
                                         </div>
                                         <!-- 10 -->
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>Gynecological</h5>
                                             <ul class="list-unstyled">
                                                 <li><a class="dropdown-item"
@@ -298,7 +345,7 @@
                                         </div>
 
 
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>Gastrointestinal</h5>
                                             <ul class="list-unstyled ">
                                                 <li>
@@ -323,7 +370,7 @@
 
 
                                         <!-- 9 -->
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>Brain</h5>
                                             <ul class="list-unstyled ">
                                                 <li>
@@ -356,7 +403,7 @@
                                             </ul>
                                         </div>
 
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>Lung</h5>
                                             <ul class="list-unstyled ">
                                                 <li>
@@ -377,7 +424,7 @@
                                         </div>
 
 
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>Fatty Liver</h5>
                                             <ul class="list-unstyled ">
                                                 <li>
@@ -390,14 +437,14 @@
                                         </div>
 
 
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>Kidney Stone</h5>
                                             <ul class="list-unstyled ">
                                                 <li><a class="dropdown-item" href="./pages/kidneystone.html">kidney
                                                         Stone</a></li>
                                             </ul>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>Skin</h5>
                                             <ul class="list-unstyled ">
                                                 <li>
@@ -415,7 +462,7 @@
 
 
 
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                                             <h5>Gallbladder</h5>
                                             <ul class="list-unstyled  mb-6">
                                                 <li><a class="dropdown-item "
@@ -439,7 +486,7 @@
                 </div>
 
                 <!-- Right side -->
-                <div class="col-md-4 d-flex flex-row gap-2 justify-content-end">
+                <div class="col-md-4 d-flex flex-row gap-2 justify-content-start justify-content-md-end">
                     <!-- Appointment Button -->
                     <div>
                         <a href="./pages/appointment.html" class="btn btn-success w-100">
@@ -683,11 +730,11 @@
     </main> -->
 
     <div class="col-10 col-md-10 mx-auto mt-4">
-        <h3><strong>Product for all concern</strong></h3>
+        <h3><strong>Product for all concerns</strong></h3>
 
         <!-- Buttons -->
         <div class="my-4">
-            <div class="btn-group d-flex flex-wrap gap-2 w-100 justify-content-between" role="group"
+            <div class="btn-group d-flex flex-wrap gap-2 w-100 justify-content-center" role="group"
                 aria-label="Large button group">
 
                 <button type="button" class="btn btn-outline-success rounded-pill px-3 py-2 flex-grow-1 flex-md-grow-0"
@@ -750,7 +797,7 @@
 
 
     <div class="col-10 col-md-10 mx-auto py-4">
-        <h3><strong>Treatments Offers</strong></h3>
+        <h3><strong>Treatments Offerd</strong></h3>
         <div class="row text-center mt-4 gap-4 justify-content-between">
             <div class="col-4 col-md-2 col-lg-1 mb-3 logo-item">
                 <img class="img-fluid custom-logo w-100" src="./assets/images/Epilepsy.webp" alt="Epilepsy">
